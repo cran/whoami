@@ -1,0 +1,16 @@
+d8d997b92c0dab3273df523210fd8343 *DESCRIPTION
+8488c7e8cbfc04df9ff69dd011f878da *LICENSE
+4c7e4b4aa97c9ba095386827c6b2578d *NAMESPACE
+1287041b31e6d7d474836564e90818c7 *R/whoami.R
+00f803384746a5e8115abddf6f0029bc *inst/NEWS.md
+89b39465cffa92be46616075395d792c *inst/README.md
+d00a3eedf9f160caf0a17c26aee85d19 *man/email_address.Rd
+d66d93fcd6b95cbe5038de00b841979f *man/fullname.Rd
+54fee928344dccd76e9fba2bdaf571db *man/gh_username.Rd
+e63f141141bd9bb4386d3002cc4c56e2 *man/username.Rd
+a51ee15777a3a9a31f19b44a47837fda *man/whoami.Rd
+80126b3653b5eb5987fe10b7b507251c *tests/testthat.R
+8030758bce81eac1241f4ebe0a1aafe1 *tests/testthat/test-email.R
+887294d60d817e98a2d482016f33df96 *tests/testthat/test-fullname.R
+6ca4cf87684b5559a712670db490fbef *tests/testthat/test-gh-username.R
+8a77b11bf3e913ae9760283ef56c6d00 *tests/testthat/test-username.R
