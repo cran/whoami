@@ -1,7 +1,7 @@
 Package: whoami
 Title: Username, Full Name, Email Address, 'GitHub' Username of the
         Current User
-Version: 1.1.0
+Version: 1.1.1
 Author: Gabor Csardi
 Maintainer: Gabor Csardi <csardi.gabor@gmail.com>
 Description: Look up the username and full name of the current user,
@@ -10,9 +10,9 @@ Description: Look up the username and full name of the current user,
 License: MIT + file LICENSE
 URL: https://github.com/gaborcsardi/whoami
 BugReports: https://github.com/gaborcsardi/whoami/issues
-Imports: httr, jsonlite
+Imports: httr, jsonlite, utils
 Suggests: testthat
 NeedsCompilation: no
-Packaged: 2015-06-11 14:26:44 UTC; gaborcsardi
+Packaged: 2015-07-13 00:59:18 UTC; gaborcsardi
 Repository: CRAN
-Date/Publication: 2015-06-11 18:39:43
+Date/Publication: 2015-07-13 03:51:00
