@@ -1,27 +1,25 @@
 
 context("Full name")
 
-test_that("fullname works via git", {
+test_that("fullname fallback", {
 
-  with_mock(
-    `base::system` = function(cmd, ...) {
-      if (grepl("^git config", cmd)) {
-        "Joe Jamba"
-      } else {
-        NULL
-      }
-    },
-    fn <- fullname()
-  )
+  mockery::stub(fullname, "system", function(cmd, ...) {
+    if (grepl("^git config", cmd)) {
+      "Joe Jamba"
+    } else {
+      NULL
+    }
+  })
 
-  expect_equal(fn, "Joe Jamba")
+  expect_equal(fullname(), "Joe Jamba")
+})
 
-  try(fn <- fullname(), silent = TRUE)
+test_that("fullname works", {
 
+  fn <- try(fullname(), silent = TRUE)
   if (!inherits(fn, "try-error")) {
     expect_equal(class(fn), "character")
     expect_equal(length(fn), 1)
     expect_match(fn, ".*")
   }
-  
 })
